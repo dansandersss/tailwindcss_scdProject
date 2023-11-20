@@ -556,10 +556,6 @@ video {
   left: 4rem;
 }
 
-.top-0{
-  top: 0px;
-}
-
 .top-16{
   top: 4rem;
 }
@@ -570,10 +566,6 @@ video {
 
 .z-0{
   z-index: 0;
-}
-
-.z-20{
-  z-index: 20;
 }
 
 .z-30{
@@ -642,8 +634,8 @@ video {
   margin-bottom: 28px;
 }
 
-.mb-\[66px\]{
-  margin-bottom: 66px;
+.mb-\[93px\]{
+  margin-bottom: 93px;
 }
 
 .me-2{
@@ -660,14 +652,6 @@ video {
 
 .mt-5{
   margin-top: 1.25rem;
-}
-
-.mt-24{
-  margin-top: 6rem;
-}
-
-.mb-\[93px\]{
-  margin-bottom: 93px;
 }
 
 .block{
@@ -698,16 +682,16 @@ video {
   height: 1.5rem;
 }
 
-.h-screen{
-  height: 100vh;
-}
-
 .h-line{
   height: 2px;
 }
 
 .w-14{
   width: 3.5rem;
+}
+
+.w-5{
+  width: 1.25rem;
 }
 
 .w-6{
@@ -726,12 +710,8 @@ video {
   width: 100%;
 }
 
-.w-screen{
-  width: 100vw;
-}
-
-.w-5{
-  width: 1.25rem;
+.max-w-7xl{
+  max-width: 80rem;
 }
 
 .max-w-\[431px\]{
@@ -742,21 +722,12 @@ video {
   max-width: 556px;
 }
 
-.max-w-7xl{
-  max-width: 80rem;
-}
-
 .origin-\[0\]{
   transform-origin: 0;
 }
 
 .-translate-y-6{
   --tw-translate-y: -1.5rem;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-
-.translate-x-\[-1000px\]{
-  --tw-translate-x: -1000px;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
@@ -953,11 +924,6 @@ video {
   padding-right: 1.25rem;
 }
 
-.px-7{
-  padding-left: 1.75rem;
-  padding-right: 1.75rem;
-}
-
 .py-0{
   padding-top: 0px;
   padding-bottom: 0px;
@@ -988,11 +954,6 @@ video {
   padding-bottom: 0.625rem;
 }
 
-.py-24{
-  padding-top: 6rem;
-  padding-bottom: 6rem;
-}
-
 .py-5{
   padding-top: 1.25rem;
   padding-bottom: 1.25rem;
@@ -1012,20 +973,12 @@ video {
   padding-left: 1.25rem;
 }
 
-.pt-7{
-  padding-top: 1.75rem;
-}
-
-.pt-\[93px\]{
-  padding-top: 93px;
-}
-
 .pt-32{
   padding-top: 8rem;
 }
 
-.pb-\[93px\]{
-  padding-bottom: 93px;
+.pt-\[93px\]{
+  padding-top: 93px;
 }
 
 .text-center{
@@ -1173,32 +1126,14 @@ video {
   opacity: 0.7;
 }
 
-.shadow-md{
-  --tw-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
-  --tw-shadow-colored: 0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);
-  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
-}
-
 .shadow-xl{
   --tw-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
   --tw-shadow-colored: 0 20px 25px -5px var(--tw-shadow-color), 0 8px 10px -6px var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
-.shadow-inner{
-  --tw-shadow: inset 0 2px 4px 0 rgb(0 0 0 / 0.05);
-  --tw-shadow-colored: inset 0 2px 4px 0 var(--tw-shadow-color);
-  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
-}
-
 .transition-all{
   transition-property: all;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 150ms;
-}
-
-.transition-transform{
-  transition-property: transform;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
 }
@@ -1217,57 +1152,8 @@ video {
   transition-duration: 300ms;
 }
 
-.ease-in{
-  transition-timing-function: cubic-bezier(0.4, 0, 1, 1);
-}
-
 .ease-in-out{
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.line{
-  position: relative;
-  display: block;
-  height: 2px;
-  width: 1.25rem;
-  cursor: pointer;
-  border-radius: 0.25rem;
-  --tw-bg-opacity: 1;
-  background-color: rgb(17 141 168 / var(--tw-bg-opacity));
-}
-
-.line::before{
-  position: absolute;
-  bottom: 0.25rem;
-  z-index: 10;
-  display: block;
-  height: 2px;
-  width: 1.25rem;
-  border-radius: 0.25rem;
-  --tw-bg-opacity: 1;
-  background-color: rgb(17 141 168 / var(--tw-bg-opacity));
-  --tw-content: '';
-  content: var(--tw-content);
-}
-
-.line::after{
-  position: absolute;
-  top: 0.25rem;
-  z-index: 10;
-  display: block;
-  height: 2px;
-  width: 1.25rem;
-  border-radius: 0.25rem;
-  --tw-bg-opacity: 1;
-  background-color: rgb(17 141 168 / var(--tw-bg-opacity));
-  --tw-content: '';
-  content: var(--tw-content);
-}
-
-@media (min-width: 768px){
-  .line{
-    display: none;
-  }
 }
 
 .listen-link{
@@ -1376,6 +1262,16 @@ video {
   top: 0.25rem;
 }
 
+.after\:bottom-0::after{
+  content: var(--tw-content);
+  bottom: 0px;
+}
+
+.after\:left-0::after{
+  content: var(--tw-content);
+  left: 0px;
+}
+
 .after\:z-10::after{
   content: var(--tw-content);
   z-index: 10;
@@ -1386,14 +1282,29 @@ video {
   display: block;
 }
 
+.after\:inline-block::after{
+  content: var(--tw-content);
+  display: inline-block;
+}
+
 .after\:h-line::after{
   content: var(--tw-content);
   height: 2px;
 }
 
+.after\:h-\[11px\]::after{
+  content: var(--tw-content);
+  height: 11px;
+}
+
 .after\:w-5::after{
   content: var(--tw-content);
   width: 1.25rem;
+}
+
+.after\:w-full::after{
+  content: var(--tw-content);
+  width: 100%;
 }
 
 .after\:rounded::after{
@@ -1405,6 +1316,27 @@ video {
   content: var(--tw-content);
   --tw-bg-opacity: 1;
   background-color: rgb(17 141 168 / var(--tw-bg-opacity));
+}
+
+.after\:bg-\[url\(\'\/images\/next\.svg\'\)\]::after{
+  content: var(--tw-content);
+  background-image: url('/images/next.svg');
+}
+
+.after\:bg-\[url\(\'\.\/images\/next\.svg\'\)\]::after{
+  content: var(--tw-content);
+  background-image: url('./images/next.svg');
+}
+
+.after\:bg-no-repeat::after{
+  content: var(--tw-content);
+  background-repeat: no-repeat;
+}
+
+.after\:object-contain::after{
+  content: var(--tw-content);
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .after\:content-\[\'\'\]::after{
@@ -1653,26 +1585,12 @@ video {
        object-fit: none;
   }
 
-  .md\:py-24{
-    padding-top: 6rem;
-    padding-bottom: 6rem;
-  }
-
-  .md\:py-\[93px\]{
-    padding-top: 93px;
+  .md\:pb-\[93px\]{
     padding-bottom: 93px;
-  }
-
-  .md\:pt-7{
-    padding-top: 1.75rem;
   }
 
   .md\:pt-\[93px\]{
     padding-top: 93px;
-  }
-
-  .md\:pb-\[93px\]{
-    padding-bottom: 93px;
   }
 
   .md\:text-left{

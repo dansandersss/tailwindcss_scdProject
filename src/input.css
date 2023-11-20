@@ -4,9 +4,6 @@
 @tailwind components;
 @tailwind utilities;
 
-.line{
-	@apply cursor-pointer block md:hidden w-5 h-line bg-primary rounded relative after:content-[''] after:block after:w-5 after:h-line after:bg-primary after:rounded after:absolute after:top-1 after:z-10 before:content-[''] before:block before:w-5 before:h-line before:bg-primary before:rounded before:absolute before:bottom-1 before:z-10
-}
 
 .listen-link{
 	@apply text-primary text-2xl lg:text-4xl hover:text-[30px] lg:hover:text-[40px] transition-all duration-200 ease-in-out
