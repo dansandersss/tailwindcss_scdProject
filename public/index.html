@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="output.css">
+	<title>Castaway</title>
+</head>
+<body class="font-dmSans bg-bgMain text-white">
+
+	<header class="bg-bgMain md:bg-transparent fixed md:relative w-full shadow-xl md:shadow-none border-b-2 border-primary md:border-none z-50 px-5 mx-auto py-7 max-w-7xl">
+		<nav class="flex justify-between items-center">
+			<h1 class="text-3xl font-bold">Castaway</h1>
+			<span id="burger-menu" class="cursor-pointer block md:hidden w-5 h-line bg-primary rounded relative after:content-[''] after:block after:w-5 after:h-line after:bg-primary after:rounded after:absolute after:top-1 after:z-10 before:content-[''] before:block before:w-5 before:h-line before:bg-primary before:rounded before:absolute before:bottom-1 before:z-10"></span>
+			<svg id="close-menu" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="hidden relative z-30 w-6 h-6 text-primary cursor-pointer">
+				<path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+			</svg>
+			<ul class="md:flex gap-10 font-normal text-lg hidden">
+				<li class="hover:text-primary transition-colors duration-200 ease-in-out">
+					<a onclick="handleClick(this)" class="scroll-link text-primary" href="#intro">Home</a>
+				</li>
+
+				<li class="hover:text-primary transition-colors duration-200 ease-in-out">
+					<a onclick="handleClick(this)"  class="scroll-link" href="#episodes">Episodes</a>
+				</li>
+
+				<li class="hover:text-primary transition-colors duration-200 ease-in-out">
+					<a onclick="handleClick(this)"  class="scroll-link" href="#about">About</a>
+				</li>
+
+				<li>
+					<a onclick="handleClick(this)"  class="scroll-link hover:text-primary transition-colors duration-200 ease-in-out" href="#contact">Contact</a>
+				</li>
+			</ul>
+		</nav>
+		
+		<div id="mobile-nav" class="bg-bgMain hidden text-right my-5">
+			<ul class="text-2xl">
+				<li class="hover:text-primary transition-colors duration-200 ease-in-out">
+					<a onclick="handleClick(this)"  class="text-primary scroll-link" href="#intro">Home</a>
+				</li>
+	
+				<li class="hover:text-primary transition-colors duration-200 ease-in-out">
+					<a onclick="handleClick(this)"  class="scroll-link" href="#episodes">Episodes</a>
+				</li>
+	
+				<li class="hover:text-primary transition-colors duration-200 ease-in-out">
+					<a onclick="handleClick(this)"  class="scroll-link" href="#about">About</a>
+				</li>
+	
+				<li class="hover:text-primary transition-colors duration-200 ease-in-out">
+					<a onclick="handleClick(this)"  class="scroll-link" href="#contact">Contact</a>
+				</li>
+			</ul>
+		</div>
+	</header> <!--header-->
+
+	<section id="intro" class="px-5 mx-auto pt-32 md:pt-[93px] max-w-7xl">
+		<div class="intro-elements md:flex items-center justify-center md:justify-center gap-10">
+			<img class="img-fluid mx-auto w-[500px] lg:w-[700px] lg:mx-0" src="images/img1.png" alt="First Image">
+
+			<div class="intro-text">
+				<p class="text-5xl mt-5 md:mt-0 text-center md:text-left lg:text-7xl tracking-[3.2px] font-light mb-5 md:mb-20">Take your<br> podcast to the<br> next <span class="font-bold">level</span></p>
+
+				<div class="socials pl-5">
+					<h3 class="mb-4 text-center md:text-left">Listen on</h3>
+
+					<div class="social-items flex gap-4 justify-center md:justify-start">
+					
+						<a class="listen-link" href="#"><i class="fa-brands fa-spotify"></i></a>
+						
+
+						<a class="listen-link" href="#"><i class="fa-brands fa-youtube"></i></a>
+
+						<a class="listen-link" href="#"><i class="fa-brands fa-soundcloud"></i></a>
+
+						<a class="listen-link" href="#"><i class="fa-brands fa-itunes"></i></a>
+
+						<a class="listen-link" href="#"><i class="fa-brands fa-amazon"></i></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section> <!--intro-->
+
+	<section id="episodes" class="px-5 mx-auto max-w-7xl">
+		<div class="section-nav flex-wrap md:flex justify-between items-center pt-[93px] mb-[93px]">
+			<h1 class="flex justify-center md:inline-block text-6xl leading-[79.2px] tracking-[2.88px]">Latest Episodes</h1>
+			<div class="buttons mt-4 md:mt-0 justify-center flex items-center">
+				<a class="bg-primary px-5 py-5 rounded-tl-md rounded-bl-md text-[17px]" href="#">View all episodes</a>
+				<a class="scroll-link px-3 py-5 bg-gray-700 text-[17px] border-r border-gray-800 hover:bg-gray-600" href="#gear">Gear & other</a>
+				<a class="scroll-link px-3 py-5 bg-gray-700 text-[17px] hover:bg-gray-600 rounded-tr-md rounded-br-md" href="#tips">Tips & Tricks</a>
+			</div>
+		</div>
+
+		<div class="gear-card bg-black rounded-md md:flex py-10 px-10 gap-12 mb-16 relative">
+			<img class="img-fluid object-contain md:object-none rounded" src="images/img2.png" alt="gear">
+			<span class="bg-bgMain inline-block md:hidden absolute top-16 left-16 text-white text-xs font-medium me-2 px-4 py-0.5 rounded dark:bg-blue-900 dark:text-blue-300">Gear</span>
+
+			<div class="card-info">
+				<span class="bg-bgMain hidden md:inline-block text-white text-xs font-medium me-2 px-4 py-0.5 rounded dark:bg-blue-900 dark:text-blue-300">Gear</span>
+
+				<h3 class="mt-12 mb-[17.56px] text-primary">Episode 3</h3>
+				<h1 class="mb-[28px] text-[64px] tracking-[2.56px] leading-[70px]">Should you get outboard audio gear?</h1>
+				<p class="mb-[18px] text-[22px] opacity-70 leading-[33px]">Is hardware really worth it when it comes to podcasting? The answer is...it depends. Here’s our reasons on why you might want to consider picking something up.</p>
+				
+				<button class="bg-primary px-5 py-5 rounded-md text-[17px]"><a href="#">View all episodes</a></button>
+			</div>
+		</div> <!--first card-->
+
+		<div id="tips" class="gear-card bg-black rounded-md md:flex py-10 px-10 gap-12 mb-16 relative">
+			<img class="img-fluid object-contain md:object-none rounded" src="images/img3.png" alt="gear">
+			<span class="bg-bgMain inline-block md:hidden absolute top-16 left-16 text-white text-xs font-medium me-2 px-4 py-0.5 rounded dark:bg-blue-900 dark:text-blue-300">Tips & Tricks</span>
+
+			<div class="card-info">
+				<span class="bg-bgMain hidden md:inline-block text-white text-xs font-medium me-2 px-4 py-0.5 rounded dark:bg-blue-900 dark:text-blue-300">Tips & Tricks</span>
+
+				<h3 class="mt-12 mb-[17.56px] text-primary">Episode 2</h3>
+				<h1 class="mb-[28px] text-[64px] tracking-[2.56px] leading-[70px]">Mic tricks to take you to the next level</h1>
+				<p class="mb-[18px] text-[22px] opacity-70 leading-[33px]">Stop rolling with those default settings on your mic. These small tweaks will take you from sounding good to great.</p>
+				
+				<button class="bg-primary px-5 py-5 rounded-md text-[17px]"><a href="#">View all episodes</a></button>
+			</div>
+		</div> <!--second card-->
+
+		<div id="gear" class="gear-card bg-black rounded-md md:flex py-10 px-10 gap-12 relative">
+			<img class="img-fluid object-contain md:object-none rounded" src="images/img4.png" alt="gear">
+			<span class="bg-bgMain inline-block md:hidden absolute top-16 left-16 text-white text-xs font-medium me-2 px-4 py-0.5 rounded dark:bg-blue-900 dark:text-blue-300">Gear</span>
+
+			<div class="card-info">
+				<span class="bg-bgMain hidden md:inline-block text-white text-xs font-medium me-2 px-4 py-0.5 rounded dark:bg-blue-900 dark:text-blue-300">Gear</span>
+
+				<h3 class="mt-12 mb-[17.56px] text-primary">Episode 1</h3>
+				<h1 class="mb-[28px] text-[64px] tracking-[2.56px] leading-[70px]">The best micro under 200 dollars</h1>
+				<p class="mb-[18px] text-[22px] opacity-70 leading-[33px]">With so many microphones on the market, how are you supposed to know what’s the best? Take a look at our top picks.</p>
+				
+				<button class="bg-primary px-5 py-5 rounded-md text-[17px]"><a href="#">View all episodes</a></button>
+			</div>
+		</div> <!--third card-->
+	</section> <!--episodes-->
+
+	<section id="about" class="px-5 mx-auto pt-[93px] max-w-7xl">
+		<div class="about-elements md:flex items-center justify-start md:justify-center gap-10">
+			<div class="about-texts">
+				<div class="w-14 h-14 bg-primary rounded-full flex justify-center items-center relative left-0 transition-all duration-200 hover:left-1 cursor-pointer mb-11">
+					<a class="relative left-0 transition-all duration-200 hover:left-1" href="#"><i class="fa-solid fa-arrow-right"></i></a>
+				</div>
+
+				<h3 class="text-primary text-xl leading-7 mb-5">Meet your host</h3>
+				<h1 class="text-6xl leading-[79.2px] tracking-[2.88px] font-normal mb-7">Jacob Paulaner</h1>
+				<p class="opacity-70 text-xl leading-8 max-w-[556px] mb-8">Jacob has a background in audio engineering, and has been podcasting since the early days.</p>
+				<p class="opacity-70 text-xl leading-8 max-w-[556px] mb-8">He’s here to help you level up your game by sharing everything he’s learned along the way.</p>
+			</div>
+
+			<img class="img-fluid w-[500px] lg:w-[700px] lg:mx-0" src="images/img5.png" alt="host">
+		</div>
+	</section> <!--about-->
+
+	<section id="contact" class="px-5 mx-auto py-[93px] max-w-7xl">
+		<div class="form-content flex-wrap flex items-center justify-center md:justify-between gap-20 bg-black rounded-md p-16">
+			<div class="form-text text-center md:text-start">
+				<h3 class="text-primary text-xl leading-7 mb-5">Email Newsletter</h3>
+				<h1 class="text-4xl sm:text-7xl sm:leading-[79.2px] sm:tracking-[2.88px] max-w-[431px]">Subscribe for updates</h1>
+			</div>
+
+			<form>
+				<div class="relative z-0 w-full mb-6 group">
+						<input type="email" name="floating_email" id="floating_email" class="block px-2.5 py-2.5 w-[261px] md:w-[522px] text-sm text-white bg-bgMain border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-primary peer" placeholder=" " required />
+						<label for="floating_email" class="px-2.5 peer-focus:font-medium absolute text-sm text-gray-500 dark:text-white duration-300 transform -translate-y-6 scale-40 top-3 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-focus:text-primary peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-7">Email address</label>
+				</div>
+				
+				<div class="relative z-0 w-full mb-6 group">
+						<input type="text" name="floating_first_name" id="floating_first_name" class="block px-2.5 py-2.5 w-[261px] md:w-[522px] text-sm text-white bg-bgMain border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-primary peer" placeholder=" " required />
+						<label for="floating_first_name" class="px-2.5 peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-primary peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-7">First name</label>
+				</div>
+				
+				<button type="submit" class="text-white bg-primary hover:bg-blue-400 focus:ring-4 focus:outline-none font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Submit</button>
+			</form>
+		</div>
+	</section> <!--subscribe form-->
+
+	<section id="reviews" class="px-5 mx-auto py-0 md:pb-[93px] max-w-7xl">
+		<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+			<div id="review-card" class="bg-black rounded-md py-14 px-12">
+				<div class="rating text-secondary text-[17px] mb-5">
+					<i class="fa-solid fa-star"></i>
+					<i class="fa-solid fa-star"></i>
+					<i class="fa-solid fa-star"></i>
+					<i class="fa-solid fa-star"></i>
+					<i class="fa-solid fa-star"></i>
+				</div>
+
+				<p class="mb-5 text-3xl leading-10">I can’t recommend this podcast enough</p>
+				<h3 class="opacity-70 text-2xl leading-7">Betty Lacey</h3>
+			</div> <!--first review-->
+
+			<div id="review-card" class="bg-black rounded-md py-14 px-12">
+				<div class="rating text-secondary text-[17px] mb-5">
+					<i class="fa-solid fa-star"></i>
+					<i class="fa-solid fa-star"></i>
+					<i class="fa-solid fa-star"></i>
+					<i class="fa-solid fa-star"></i>
+					<i class="fa-solid fa-star"></i>
+				</div>
+
+				<p class="mb-5 text-3xl leading-10">Jacob is the best in the business</p>
+				<h3 class="opacity-70 text-2xl leading-7">Adam Driver</h3>
+			</div> <!--second review-->
+
+			<div id="review-card" class="bg-black rounded-md py-14 px-12">
+				<div class="rating text-secondary text-[17px] mb-5">
+					<i class="fa-solid fa-star"></i>
+					<i class="fa-solid fa-star"></i>
+					<i class="fa-solid fa-star"></i>
+					<i class="fa-solid fa-star"></i>
+					<i class="fa-solid fa-star"></i>
+				</div>
+
+				<p class="mb-5 text-3xl leading-10">A wealth of audio knowledge</p>
+				<h3 class="opacity-70 text-2xl leading-7">Marcus Brown</h3>
+			</div> <!--third review-->
+
+			<div id="review-card" class="bg-black rounded-md py-14 px-12 hidden md:inline-block">
+				<div class="rating text-secondary text-[17px] mb-5">
+					<i class="fa-solid fa-star"></i>
+					<i class="fa-solid fa-star"></i>
+					<i class="fa-solid fa-star"></i>
+					<i class="fa-solid fa-star"></i>
+					<i class="fa-solid fa-star"></i>
+				</div>
+
+				<p class="mb-5 text-3xl leading-10">Every episode is a gem!</p>
+				<h3 class="opacity-70 text-2xl leading-7">Jessica Knowl</h3>
+			</div> <!--fourth review-->
+
+			<div id="review-card" class="bg-black rounded-md py-14 px-12 hidden md:inline-block">
+				<div class="rating text-secondary text-[17px] mb-5">
+					<i class="fa-solid fa-star"></i>
+					<i class="fa-solid fa-star"></i>
+					<i class="fa-solid fa-star"></i>
+					<i class="fa-solid fa-star"></i>
+					<i class="fa-solid fa-star"></i>
+				</div>
+
+				<p class="mb-5 text-3xl leading-10">Whoa whoa, let me take some notes!</p>
+				<h3 class="opacity-70 text-2xl leading-7">Scott Adams</h3>
+			</div> <!--fifth review-->
+
+			<div id="review-card" class="bg-black rounded-md py-14 px-12 hidden md:inline-block">
+				<div class="rating text-secondary text-[17px] mb-5">
+					<i class="fa-solid fa-star"></i>
+					<i class="fa-solid fa-star"></i>
+					<i class="fa-solid fa-star"></i>
+					<i class="fa-solid fa-star"></i>
+					<i class="fa-solid fa-star"></i>
+				</div>
+
+				<p class="mb-5 text-3xl leading-10">I’ve upped my game considerably since I started listening</p>
+				<h3 class="opacity-70 text-2xl leading-7">Steven Blast</h3>
+			</div> <!--sixth review-->
+		</div>	
+	</section> <!--reviews-->
+
+	<footer class="px-5 mx-auto py-[93px] max-w-7xl">
+		<div class="grid grid-cols-6">
+			<div class=" col-span-12 sm:col-span-2 mb-4 sm:mb-0">
+				<h1 class="text-3xl font-bold mb-5">Castaway</h1>
+				<div class="links flex gap-4">
+					<a class="text-2xl" href="#"><i class="fa-brands fa-instagram"></i></a>
+					<a class="text-2xl" href="#"><i class="fa-brands fa-x-twitter"></i></a>
+					<a class="text-2xl" href="#"><i class="fa-brands fa-square-facebook"></i></a>
+				</div>
+			</div>
+
+			<div class="col-span-6 sm:col-span-1">
+				<ul class="space-y-3 before:content-[''] relative">
+					<li><a href="#">Home</a></li>
+					<li><a href="#">About</a></li>
+					<li><a href="#">Episodes</a></li>
+					<li><a href="#">Contact</a></li>
+				</ul>
+			</div>
+
+			<div class="col-span-6 sm:col-span-1 mb-4 sm:mb-0">
+				<ul class="space-y-3">
+					<li><a href="#">Style Guide</a></li>
+					<li><a href="#">Instructions</a></li>
+					<li><a href="#">Changelog</a></li>
+					<li><a href="#">Credit</a></li>
+					<li><a href="#">Powered by Webflow</a></li>
+					<li><a href="#">Licenses</a></li>
+				</ul>
+			</div>
+
+			<div class="col-span-12 sm:col-span-2">
+				<div class="social-items flex gap-4 sm:justify-start">
+				
+					<a class="listen-link-footer" href="#"><i class="fa-brands fa-spotify"></i></a>
+					
+
+					<a class="listen-link-footer" href="#"><i class="fa-brands fa-youtube"></i></a>
+
+					<a class="listen-link-footer" href="#"><i class="fa-brands fa-soundcloud"></i></a>
+
+					<a class="listen-link-footer" href="#"><i class="fa-brands fa-itunes"></i></a>
+
+					<a class="listen-link-footer" href="#"><i class="fa-brands fa-amazon"></i></a>
+				</div>
+			</div>
+		</div>
+	</footer> <!--footer-->
+
+	<script src="/node_modules/smoothscroll-polyfill/dist/smoothscroll.js"></script>
+	<script src="app.js"></script>
+	<script src="https://kit.fontawesome.com/f897a00291.js" crossorigin="anonymous"></script>
+</body>
+</html>

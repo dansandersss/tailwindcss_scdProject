@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100;0,9..40,200;0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;0,9..40,800;0,9..40,900;0,9..40,1000;1,9..40,100;1,9..40,200;1,9..40,300;1,9..40,400;1,9..40,500;1,9..40,600;1,9..40,700;1,9..40,800;1,9..40,900;1,9..40,1000&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.line{
+	@apply cursor-pointer block md:hidden w-5 h-line bg-primary rounded relative after:content-[''] after:block after:w-5 after:h-line after:bg-primary after:rounded after:absolute after:top-1 after:z-10 before:content-[''] before:block before:w-5 before:h-line before:bg-primary before:rounded before:absolute before:bottom-1 before:z-10
+}
+
+.listen-link{
+	@apply text-primary text-2xl lg:text-4xl hover:text-[30px] lg:hover:text-[40px] transition-all duration-200 ease-in-out
+}
+
+.listen-link-footer{
+	@apply text-primary text-xl lg:text-2xl hover:text-[24px] lg:hover:text-[30px] transition-all duration-200 ease-in-out
+}
+
