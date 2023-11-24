@@ -6,9 +6,9 @@
 	<link rel="stylesheet" href="output.css">
 	<title>Castaway</title>
 </head>
-<body class="font-dmSans bg-bgMain text-white">
+<body class="font-dmSans bg-gray-200 dark:bg-bgMain dark:text-white text-black">
 
-	<header class="bg-bgMain md:bg-transparent fixed md:relative w-full shadow-xl md:shadow-none border-b-2 border-primary md:border-none z-50 px-5 mx-auto py-7 max-w-7xl">
+	<header class="bg-gray-200 text-black dark:text-white dark:bg-bgMain md:bg-transparent fixed md:relative w-full shadow-xl md:shadow-none border-b-2 border-primary md:border-none z-50 px-5 mx-auto py-7 max-w-7xl">
 		<nav class="flex justify-between items-center">
 			<h1 class="text-3xl font-bold">Castaway</h1>
 			<span id="burger-menu" class="cursor-pointer block md:hidden w-5 h-line bg-primary rounded relative after:content-[''] after:block after:w-5 after:h-line after:bg-primary after:rounded after:absolute after:top-1 after:z-10 before:content-[''] before:block before:w-5 before:h-line before:bg-primary before:rounded before:absolute before:bottom-1 before:z-10"></span>
@@ -34,7 +34,7 @@
 			</ul>
 		</nav>
 		
-		<div id="mobile-nav" class="bg-bgMain hidden text-right my-5">
+		<div id="mobile-nav" class="dark:bg-bgMain bg-gray-200 hidden text-right my-5">
 			<ul class="text-2xl">
 				<li class="hover:text-primary transition-colors duration-200 ease-in-out">
 					<a onclick="handleClick(this)"  class="text-primary scroll-link" href="#intro">Home</a>
@@ -86,55 +86,55 @@
 	<section id="episodes" class="px-5 mx-auto max-w-7xl">
 		<div class="section-nav flex-wrap md:flex justify-between items-center pt-[93px] mb-[93px]">
 			<h1 class="flex justify-center md:inline-block text-6xl leading-[79.2px] tracking-[2.88px]">Latest Episodes</h1>
-			<div class="buttons mt-4 md:mt-0 justify-center flex items-center">
+			<div class="buttons mt-4 md:mt-0 justify-center flex items-center text-white dark:text-white">
 				<a class="bg-primary px-5 py-5 rounded-tl-md rounded-bl-md text-[17px]" href="#">View all episodes</a>
 				<a class="scroll-link px-3 py-5 bg-gray-700 text-[17px] border-r border-gray-800 hover:bg-gray-600" href="#gear">Gear & other</a>
 				<a class="scroll-link px-3 py-5 bg-gray-700 text-[17px] hover:bg-gray-600 rounded-tr-md rounded-br-md" href="#tips">Tips & Tricks</a>
 			</div>
 		</div>
 
-		<div class="gear-card bg-black rounded-md md:flex py-10 px-10 gap-12 mb-16 relative">
+		<div class="gear-card bg-gray-800 text-gray-400 dark:text-white dark:bg-black rounded-md md:flex py-10 px-10 gap-12 mb-16 relative">
 			<img class="img-fluid object-contain md:object-none rounded" src="images/img2.png" alt="gear">
-			<span class="bg-bgMain inline-block md:hidden absolute top-16 left-16 text-white text-xs font-medium me-2 px-4 py-0.5 rounded dark:bg-blue-900 dark:text-blue-300">Gear</span>
+			<span class="bg-bgMain inline-block md:hidden absolute top-16 left-16 text-white text-xs font-medium me-2 px-4 py-0.5 rounded dark:bg-bgMain dark:text-white">Gear</span>
 
 			<div class="card-info">
-				<span class="bg-bgMain hidden md:inline-block text-white text-xs font-medium me-2 px-4 py-0.5 rounded dark:bg-blue-900 dark:text-blue-300">Gear</span>
+				<span class="bg-bgMain hidden md:inline-block text-white text-xs font-medium me-2 px-4 py-0.5 rounded dark:bg-bgMain dark:text-white">Gear</span>
 
 				<h3 class="mt-12 mb-[17.56px] text-primary">Episode 3</h3>
 				<h1 class="mb-[28px] text-[64px] tracking-[2.56px] leading-[70px]">Should you get outboard audio gear?</h1>
 				<p class="mb-[18px] text-[22px] opacity-70 leading-[33px]">Is hardware really worth it when it comes to podcasting? The answer is...it depends. Here’s our reasons on why you might want to consider picking something up.</p>
 				
-				<button class="bg-primary px-5 py-5 rounded-md text-[17px]"><a href="#">View all episodes</a></button>
+				<button class="bg-primary px-5 py-5 rounded-md text-[17px] text-white dark:text-white"><a href="#">View all episodes</a></button>
 			</div>
 		</div> <!--first card-->
 
-		<div id="tips" class="gear-card bg-black rounded-md md:flex py-10 px-10 gap-12 mb-16 relative">
+		<div id="tips" class="gear-card bg-gray-800 text-gray-400 dark:text-white dark:bg-black rounded-md md:flex py-10 px-10 gap-12 mb-16 relative">
 			<img class="img-fluid object-contain md:object-none rounded" src="images/img3.png" alt="gear">
-			<span class="bg-bgMain inline-block md:hidden absolute top-16 left-16 text-white text-xs font-medium me-2 px-4 py-0.5 rounded dark:bg-blue-900 dark:text-blue-300">Tips & Tricks</span>
+			<span class="bg-bgMain inline-block md:hidden absolute top-16 left-16 text-white text-xs font-medium me-2 px-4 py-0.5 rounded dark:bg-bgMain dark:text-white">Tips & Tricks</span>
 
 			<div class="card-info">
-				<span class="bg-bgMain hidden md:inline-block text-white text-xs font-medium me-2 px-4 py-0.5 rounded dark:bg-blue-900 dark:text-blue-300">Tips & Tricks</span>
+				<span class="bg-bgMain hidden md:inline-block text-white text-xs font-medium me-2 px-4 py-0.5 rounded dark:bg-bgMain dark:text-white">Tips & Tricks</span>
 
 				<h3 class="mt-12 mb-[17.56px] text-primary">Episode 2</h3>
 				<h1 class="mb-[28px] text-[64px] tracking-[2.56px] leading-[70px]">Mic tricks to take you to the next level</h1>
 				<p class="mb-[18px] text-[22px] opacity-70 leading-[33px]">Stop rolling with those default settings on your mic. These small tweaks will take you from sounding good to great.</p>
 				
-				<button class="bg-primary px-5 py-5 rounded-md text-[17px]"><a href="#">View all episodes</a></button>
+				<button class="bg-primary px-5 py-5 rounded-md text-[17px] text-white dark:text-white"><a href="#">View all episodes</a></button>
 			</div>
 		</div> <!--second card-->
 
-		<div id="gear" class="gear-card bg-black rounded-md md:flex py-10 px-10 gap-12 relative">
+		<div id="gear" class="gear-card bg-gray-800 text-gray-400 dark:text-white dark:bg-black rounded-md md:flex py-10 px-10 gap-12 relative">
 			<img class="img-fluid object-contain md:object-none rounded" src="images/img4.png" alt="gear">
-			<span class="bg-bgMain inline-block md:hidden absolute top-16 left-16 text-white text-xs font-medium me-2 px-4 py-0.5 rounded dark:bg-blue-900 dark:text-blue-300">Gear</span>
+			<span class="bg-bgMain inline-block md:hidden absolute top-16 left-16 text-white text-xs font-medium me-2 px-4 py-0.5 rounded dark:bg-bgMain dark:text-white">Gear</span>
 
 			<div class="card-info">
-				<span class="bg-bgMain hidden md:inline-block text-white text-xs font-medium me-2 px-4 py-0.5 rounded dark:bg-blue-900 dark:text-blue-300">Gear</span>
+				<span class="bg-bgMain hidden md:inline-block text-white text-xs font-medium me-2 px-4 py-0.5 rounded dark:bg-bgMain dark:text-white">Gear</span>
 
 				<h3 class="mt-12 mb-[17.56px] text-primary">Episode 1</h3>
 				<h1 class="mb-[28px] text-[64px] tracking-[2.56px] leading-[70px]">The best micro under 200 dollars</h1>
 				<p class="mb-[18px] text-[22px] opacity-70 leading-[33px]">With so many microphones on the market, how are you supposed to know what’s the best? Take a look at our top picks.</p>
 				
-				<button class="bg-primary px-5 py-5 rounded-md text-[17px]"><a href="#">View all episodes</a></button>
+				<button class="bg-primary px-5 py-5 rounded-md text-[17px] text-white dark:text-white"><a href="#">View all episodes</a></button>
 			</div>
 		</div> <!--third card-->
 	</section> <!--episodes-->
@@ -143,7 +143,7 @@
 		<div class="about-elements md:flex items-center justify-start md:justify-center gap-10">
 			<div class="about-texts">
 				<div class="w-14 h-14 bg-primary rounded-full flex justify-center items-center relative left-0 transition-all duration-200 hover:left-1 cursor-pointer mb-11">
-					<a class="relative left-0 transition-all duration-200 hover:left-1" href="#"><i class="fa-solid fa-arrow-right"></i></a>
+					<a class="relative left-0 transition-all duration-200 hover:left-1 text-white dark:text-black" href="#"><i class="fa-solid fa-arrow-right"></i></a>
 				</div>
 
 				<h3 class="text-primary text-xl leading-7 mb-5">Meet your host</h3>
@@ -157,7 +157,7 @@
 	</section> <!--about-->
 
 	<section id="contact" class="px-5 mx-auto py-[93px] max-w-7xl">
-		<div class="form-content flex-wrap flex items-center justify-center md:justify-between gap-20 bg-black rounded-md p-16">
+		<div class="form-content flex-wrap flex items-center justify-center md:justify-between gap-20 bg-gray-800 text-gray-400 dark:text-white dark:bg-black rounded-md p-16">
 			<div class="form-text text-center md:text-start">
 				<h3 class="text-primary text-xl leading-7 mb-5">Email Newsletter</h3>
 				<h1 class="text-4xl sm:text-7xl sm:leading-[79.2px] sm:tracking-[2.88px] max-w-[431px]">Subscribe for updates</h1>
@@ -174,14 +174,14 @@
 						<label for="floating_first_name" class="px-2.5 peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-primary peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-7">First name</label>
 				</div>
 				
-				<button type="submit" class="text-white bg-primary hover:bg-blue-400 focus:ring-4 focus:outline-none font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Submit</button>
+				<button type="submit" class="text-white bg-primary hover:bg-opacity-70 focus:ring-4 focus:outline-none font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-primary dark:hover:bg-primary dark:hover:bg-opacity-70 dark:focus:bg-opacity-70">Submit</button>
 			</form>
 		</div>
 	</section> <!--subscribe form-->
 
 	<section id="reviews" class="px-5 mx-auto py-0 md:pb-[93px] max-w-7xl">
 		<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-			<div id="review-card" class="bg-black rounded-md py-14 px-12">
+			<div id="review-card" class="bg-gray-800 dark:bg-black text-gray-400 dark:text-white rounded-md py-14 px-12">
 				<div class="rating text-secondary text-[17px] mb-5">
 					<i class="fa-solid fa-star"></i>
 					<i class="fa-solid fa-star"></i>
@@ -194,7 +194,7 @@
 				<h3 class="opacity-70 text-2xl leading-7">Betty Lacey</h3>
 			</div> <!--first review-->
 
-			<div id="review-card" class="bg-black rounded-md py-14 px-12">
+			<div id="review-card" class="bg-gray-800 dark:bg-black text-gray-400 dark:text-white rounded-md py-14 px-12">
 				<div class="rating text-secondary text-[17px] mb-5">
 					<i class="fa-solid fa-star"></i>
 					<i class="fa-solid fa-star"></i>
@@ -207,7 +207,7 @@
 				<h3 class="opacity-70 text-2xl leading-7">Adam Driver</h3>
 			</div> <!--second review-->
 
-			<div id="review-card" class="bg-black rounded-md py-14 px-12">
+			<div id="review-card" class="bg-gray-800 dark:bg-black text-gray-400 dark:text-white rounded-md py-14 px-12">
 				<div class="rating text-secondary text-[17px] mb-5">
 					<i class="fa-solid fa-star"></i>
 					<i class="fa-solid fa-star"></i>
@@ -220,7 +220,7 @@
 				<h3 class="opacity-70 text-2xl leading-7">Marcus Brown</h3>
 			</div> <!--third review-->
 
-			<div id="review-card" class="bg-black rounded-md py-14 px-12 hidden md:inline-block">
+			<div id="review-card" class="bg-gray-800 dark:bg-black text-gray-400 dark:text-white rounded-md py-14 px-12 hidden md:inline-block">
 				<div class="rating text-secondary text-[17px] mb-5">
 					<i class="fa-solid fa-star"></i>
 					<i class="fa-solid fa-star"></i>
@@ -233,7 +233,7 @@
 				<h3 class="opacity-70 text-2xl leading-7">Jessica Knowl</h3>
 			</div> <!--fourth review-->
 
-			<div id="review-card" class="bg-black rounded-md py-14 px-12 hidden md:inline-block">
+			<div id="review-card" class="bg-gray-800 dark:bg-black text-gray-400 dark:text-white rounded-md py-14 px-12 hidden md:inline-block">
 				<div class="rating text-secondary text-[17px] mb-5">
 					<i class="fa-solid fa-star"></i>
 					<i class="fa-solid fa-star"></i>
@@ -246,7 +246,7 @@
 				<h3 class="opacity-70 text-2xl leading-7">Scott Adams</h3>
 			</div> <!--fifth review-->
 
-			<div id="review-card" class="bg-black rounded-md py-14 px-12 hidden md:inline-block">
+			<div id="review-card" class="bg-gray-800 dark:bg-black text-gray-400 dark:text-white rounded-md py-14 px-12 hidden md:inline-block">
 				<div class="rating text-secondary text-[17px] mb-5">
 					<i class="fa-solid fa-star"></i>
 					<i class="fa-solid fa-star"></i>

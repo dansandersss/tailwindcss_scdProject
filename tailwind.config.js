@@ -1,6 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: ['public/index.html'],
+	darkMode: 'class',
   theme: {
     extend: {
 			fontFamily: {
@@ -24,7 +25,6 @@ module.exports = {
 					xl: '5rem',
 				},
 			},
-
 		},
 		
   },
